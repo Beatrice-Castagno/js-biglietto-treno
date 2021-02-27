@@ -1,4 +1,3 @@
-
 // Prendo i chilometri e l'età della persona
 var km = parseInt(prompt("Inserisci i km che devi percorrere:"));
 var eta = parseInt(prompt("Qual è la tua età?"));
@@ -8,9 +7,9 @@ var prezzoKm = 0.21;
 var totBiglietto = km * prezzoKm;
 
 // Calcolo gli sconti
-var sconto20 = totBiglietto * 20 / 100;
+var sconto20 = totBiglietto * (20 / 100);
 var totBigliettoSconto20 = totBiglietto - sconto20;
-var sconto40 = totBiglietto * 40 / 100;
+var sconto40 = totBiglietto * (40 / 100);
 var totBigliettoSconto40 = totBiglietto - sconto40;
 
 // Questo alert si attiva nel caso in cui l'età o i km non siano numeri
@@ -28,10 +27,10 @@ if (isNaN(eta) || isNaN(km)) {
 
 else {
 	if (eta <= 18) {
-		alert("Il prezzo del tuo biglietto è di: " + totBigliettoSconto20 + "€. Sconto 20%");
+		alert("Il prezzo del tuo biglietto è di: " + totBigliettoSconto20 + "€. Sconto 20%".);
 	} else if (eta >= 65) {
-		alert("Il prezzo del tuo biglietto è di: " + totBigliettoSconto40 + "€. Sconto 40%");
+		alert("Il prezzo del tuo biglietto è di: " + totBigliettoSconto40 + "€. Sconto 40%".);
 	} else {
-		alert("Il prezzo del tuo biglietto è di: " + totBiglietto + "€. Sconto non applicabile");
+		alert("Il prezzo del tuo biglietto è di: " + totBiglietto + "€. Sconto non applicabile.");
 	}
 }
